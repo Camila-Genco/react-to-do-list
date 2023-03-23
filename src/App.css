@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+  background-color: rgb(35, 34, 34);
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.title{
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container{
+  display: flex;
+  background-color: black;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.check{
+  min-width: 19px;
+  min-height: 19px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid grey;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.completed{
+  width: 27px;
+  height: 27px;
+  color: green;
+  margin-right: 5px;
+  margin-left: -2px;
+  cursor: pointer;
+}
+
+input{
+  background-color: black;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 15px;    
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.todoItem{
+  width: 40vw;
+  background-color: black;
+  color: grey;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px; 
+  border-radius: 10px;
+}
+
+.todoItem:hover{
+  background-color: rgb(17, 17, 17);
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.checked{
+  text-decoration: line-through;
+}
+
+.closeIcon{
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.filters-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #7a7272;
+  background-color: black;
+  padding: 2px 7px 2px 10px;
+  width: 30vh;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.clear{
+  font-size: 12px;
+  color: #7a7272;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.clear:hover{
+  color: #b8bb34;
+}
+
+@media only screen and (min-width: 768px) { 
+  body {
+    min-width: auto; 
+  }
+  .todoItem {
+    width: 350px; 
+  }
+}
+
+@media only screen and (min-width: 992px) { 
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+  }
+}
+
